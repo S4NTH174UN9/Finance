@@ -278,3 +278,6 @@ def sell():
 
     return render_template("sell.html", stocks=user_stocks)
 
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
